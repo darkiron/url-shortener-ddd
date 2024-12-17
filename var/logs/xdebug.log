@@ -1,0 +1,146 @@
+[8] Log opened at 2024-12-17 13:41:32.454902
+[8] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[8] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[8] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[8] Log closed at 2024-12-17 13:41:32.667696
+
+[7] Log opened at 2024-12-17 14:08:22.679457
+[7] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[7] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[7] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[7] Log closed at 2024-12-17 14:08:22.886920
+
+[17] Log opened at 2024-12-17 14:10:14.605755
+[17] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[17] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[17] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[17] Log closed at 2024-12-17 14:10:14.987715
+
+[30] Log opened at 2024-12-17 14:10:22.910177
+[30] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[30] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[30] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[142] Log opened at 2024-12-17 14:10:40.061450
+[142] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[142] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[142] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[142] Log closed at 2024-12-17 14:10:54.132967
+
+[146] Log opened at 2024-12-17 14:10:54.156090
+[146] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[146] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[146] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[146] Log closed at 2024-12-17 14:10:56.374329
+
+[30] Log closed at 2024-12-17 14:10:56.494778
+
+[8] Log opened at 2024-12-17 14:11:51.070641
+[8] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[8] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[8] Log closed at 2024-12-17 14:11:51.274647
+
+[7] Log opened at 2024-12-17 14:12:02.075141
+[7] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[7] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[7] Log closed at 2024-12-17 14:12:02.279186
+
+[8] Log opened at 2024-12-17 14:17:43.134676
+[8] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[8] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[8] Log closed at 2024-12-17 14:17:43.468256
+
+[149] Log opened at 2024-12-17 14:19:17.412894
+[149] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[149] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[149] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[149] Log closed at 2024-12-17 14:19:18.212972
+
+[7] Log opened at 2024-12-17 14:19:22.453630
+[7] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[7] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[8] Log opened at 2024-12-17 14:19:23.459286
+[8] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[7] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[8] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[7] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[8] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[8] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[7] Log closed at 2024-12-17 14:19:24.036731
+
+[8] Log closed at 2024-12-17 14:19:24.125965
+
+[163] Log opened at 2024-12-17 14:20:10.771283
+[163] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[163] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[163] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[163] Log closed at 2024-12-17 14:20:17.240273
+
+[162] Log opened at 2024-12-17 14:20:20.165938
+[162] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[162] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[162] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[162] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[162] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[162] Log closed at 2024-12-17 14:20:21.321511
+
+[7] Log opened at 2024-12-17 14:20:24.259873
+[7] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[7] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[7] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[7] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[7] Log closed at 2024-12-17 14:20:25.001845
+
+[176] Log opened at 2024-12-17 14:23:53.508214
+[176] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[176] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[176] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[176] Log closed at 2024-12-17 14:23:55.503888
+
+[203] Log opened at 2024-12-17 14:25:09.309554
+[203] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[203] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[203] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[203] Log closed at 2024-12-17 14:25:10.249093
+
+[8] Log opened at 2024-12-17 14:25:23.818075
+[8] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[8] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[8] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[8] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[8] Log closed at 2024-12-17 14:25:25.216325
+
+[219] Log opened at 2024-12-17 14:25:39.929320
+[219] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[219] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[219] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[219] Log closed at 2024-12-17 14:25:40.475600
+
+[238] Log opened at 2024-12-17 14:25:46.353830
+[238] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[238] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[238] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[238] Log closed at 2024-12-17 14:25:47.412913
+
+[255] Log opened at 2024-12-17 14:26:40.916735
+[255] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[255] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[255] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[347] Log opened at 2024-12-17 14:26:55.071409
+[347] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[347] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[347] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[347] Log closed at 2024-12-17 14:27:09.301616
+
+[351] Log opened at 2024-12-17 14:27:09.325271
+[351] [Config] WARN: Not setting up control socket with default value due to unavailable 'tsc' clock
+[351] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[351] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[351] Log closed at 2024-12-17 14:27:11.864174
+
+[255] Log closed at 2024-12-17 14:27:11.897586
+
+[162] Log opened at 2024-12-17 14:27:19.525874
+[162] [Step Debug] INFO: Connecting to configured address/port: 192.168.1.15:9003.
+[162] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 192.168.1.15:9003 (through xdebug.client_host/xdebug.client_port).
+[162] Log closed at 2024-12-17 14:27:21.509070
+
