@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  html:
+    image: caddy:2.7.6-alpine
+    configs:
+      - source: caddy_config
+        target: /etc/caddy/Caddyfile
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./app:/var/www/html
+      - ./var/logs/caddy:/var/log/caddy
+    depends_on:
+      - php
+  php:
+    build:
+      context: .
+      dockerfile: ./.docker/php/Dockerfile
+      args:
+        - XDEBUG_CLIENT_HOST=${XDEBUG_CLIENT_HOST}
+    ports:
+      - "9000:9000"
+    expose:
+      - "9003"
+    volumes:
+      - ./app:/var/www/html:rw
+      - ./var/logs:/var/logs:rw
+
+configs:
+  caddy_config:
+    file: ./Caddyfile
