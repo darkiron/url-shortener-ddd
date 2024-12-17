@@ -6,12 +6,12 @@ Raccourcir des URLs longues.
 Rediriger automatiquement vers l'URL d'origine via un lien court.
 Lister et gérer les redirections existantes.
 ## 🛠️ Technologies utilisées
-PHP 8.2+
-Symfony 6.x
-Doctrine ORM
-Docker & Docker Compose
-SQLite (base de données légère)
-Symfony Messenger (pour le CQRS avec des handlers de commandes)
+* PHP 8.2+
+* Symfony 6.x
+* Doctrine ORM
+* Docker & Docker Compose
+* SQLite (base de données légère)
+* Symfony Messenger (pour le CQRS avec des handlers de commandes)
 ## 🧱 Architecture
 Le projet suit les principes Domain-Driven Design (DDD) et CQRS. Voici la structure principale :
 
@@ -42,14 +42,15 @@ Docker Compose
    docker-compose up --build
 ```
 4. Accéder au projet
-   Frontend/API : http://localhost:8000
+   Frontend : http://localhost:80
+
    La base de données SQLite est stockée dans var/app.db.
 ## 📄 Routes principales
-| Méthode | URL                | Description                           |
-|---------|--------------------|---------------------------------------|
-| GET     | `/api/all`         | Liste toutes les redirections.       |
-| GET     | `/{linkId}`        | Redirige vers l'URL raccourcie.      |
-| POST    | `/api/shorten`     | Crée une nouvelle URL raccourcie.    |
+| Méthode | URL         | Description                         |
+|---------|-------------|-------------------------------------|
+| GET     | `/api/all`  | Liste toutes les redirections en json. |
+| GET     | `/{linkId}` | Redirige vers l'URL raccourcie.     |
+| GET     | `/all`      | iste toutes les redirections .     |
 
 ## 🧪 Tests
    Pour exécuter les tests (unitaires ou fonctionnels), lancez la commande suivante :
