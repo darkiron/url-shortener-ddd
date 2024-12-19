@@ -2,6 +2,7 @@
 
 namespace App\Infrastructure\Repository;
 
+use App\Domain\Entity\Redirection;
 use App\Domain\Repository\RedirectionRepositoryInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Domain\Entity\Redirection as DomainRedirection;
@@ -44,5 +45,15 @@ class RedirectionRepository implements RedirectionRepositoryInterface
             fn($doctrineRedirection) => $this->redirectionFactory->createDomainFromDoctrine($doctrineRedirection),
             $doctrineRedirections
         );
+    }
+
+    public function saveRedirection(Redirection $redirection): Redirection
+    {
+        $doctrineRedirection = $this->redirectionFactory->createDoctrineFromDomain($redirection);
+
+        $this->entityManager->persist($doctrineRedirection);
+        $this->entityManager->flush();
+
+        return $this->redirectionFactory->createDomainFromDoctrine($doctrineRedirection);
     }
 }

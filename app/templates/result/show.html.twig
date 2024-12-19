@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Résultat du Shortener{% endblock %}
+
+{% block body %}
+    <h1>🔗 Voici votre lien raccourci !</h1>
+
+    <p>Votre lien court :</p>
+    <a href="{{ path('redirection', { linkId: redirection.from }) }}" target="_blank">
+        {{ path('redirection', { linkId: redirection.from }) }}
+    </a>
+
+    <p>Le lien redirigera vers :</p>
+    <a href="{{ redirection.to }}" target="_blank">{{ redirection.to }}</a>
+
+    <p>Partagez le lien court avec vos amis ou utilisez-le directement dans vos applications.</p>
+{% endblock %}
