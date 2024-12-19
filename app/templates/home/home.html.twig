@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home | URL Shortener{% endblock %}
+
+{% block body %}
+    <header>
+        <h1>🚀 URL Shortener</h1>
+        <p>Raccourcissez vos URLs facilement et partagez-les en un clic.</p>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h2>Créer une URL courte</h2>
+            <form action="{{ path('create_url') }}" method="POST">
+                <input
+                        type="url"
+                        name="originalUrl"
+                        placeholder="Entrez votre URL ici"
+                        required>
+                <button type="submit">Raccourcir</button>
+            </form>
+        </section>
+
+        <section id="about-section">
+            <h2>À propos du projet</h2>
+            <p>Ce projet est un raccourcisseur d’URL basé sur une architecture DDD. Son objectif est de fournir une solution rapide et efficace pour gérer vos liens.</p>
+            <a href="https://github.com/darkiron/url-shortener-ddd" target="_blank">
+                Voir le projet sur GitHub
+            </a>
+        </section>
+    </main>
+{% endblock %}

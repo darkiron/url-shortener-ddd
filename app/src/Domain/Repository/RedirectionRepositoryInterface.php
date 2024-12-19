@@ -12,4 +12,6 @@ interface RedirectionRepositoryInterface
      * @return array [Redirection]
      */
     public function findAll(): array;
+
+    public function saveRedirection(Redirection $redirection): Redirection;
 }

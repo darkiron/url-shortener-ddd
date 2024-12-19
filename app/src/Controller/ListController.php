@@ -13,7 +13,7 @@ class ListController extends AbstractController
 {
 
     #[Route('/all', 'list_all', priority: 10)]
-    public function list( MessageBusInterface $bus): Response
+    public function list(MessageBusInterface $bus): Response
     {
 
         $command = new RedirectListQuery();

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Application\Handler;
+namespace App\Application\QueryHandler;
 
 use App\Application\Query\RedirectListQuery;
 use App\Domain\Repository\RedirectionRepositoryInterface;

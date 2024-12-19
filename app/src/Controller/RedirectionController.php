@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Application\Query\RedirectQuery;
+use App\Domain\Entity\Redirection;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,37 +17,36 @@ class RedirectionController extends AbstractController
     #[Route('/{linkId}', name: 'redirection')]
     public function Redirection(string $linkId, Request $request, MessageBusInterface $bus): Response
     {
+        // Récupérer les paramètres de la requête
         $queryParameters = $request->getQueryString();
-        $command = new RedirectQuery($linkId, $queryParameters);
 
-;
+        // Créer la Query pour le bus
+        $query = new RedirectQuery($linkId);
 
-        $envelope = $bus->dispatch($command);
+        // Envoyer la Query au bus
+        $envelope = $bus->dispatch($query);
 
-        /** @var HandledStamp $handledStamp */
+        /** @var HandledStamp|null $handledStamp */
         $handledStamp = $envelope->last(HandledStamp::class);
 
+        // Vérifier si la Query a été traitée
         if ($handledStamp) {
-            /** @var RedirectResponse $response */
-            $response = $handledStamp->getResult();
-            return $response;
-        } else {
-            return $this->render('redirection/show.html.twig', [
-            ]);
+            /** @var Redirection $redirection */
+            $redirection = $handledStamp->getResult();
+
+            // Effectuer la redirection vers l'URL cible
+            $targetUrl = $redirection->getTo();
+
+            // Ajouter les paramètres de requête, si disponibles
+            if ($queryParameters) {
+                $targetUrl .= '?' . $queryParameters;
+            }
+
+            return new RedirectResponse($targetUrl);
         }
 
-
+        // Si aucun résultat n'est disponible, lever une exception
+        throw $this->createNotFoundException('Lien introuvable ou redirection impossible.');
     }
 
-
-/**
-     * @return \App\Infrastructure\Entity\Redirection[]
-     */
-    private function findAll(): array
-    {
-        $connection = (new DatabaseConnectionFactory())->makeFromConfig();
-        $repository = new RedirectionRepository($connection);
-
-        return $repository->findAll();
-    }
 }
