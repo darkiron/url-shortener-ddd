@@ -27,20 +27,17 @@ src/
 ## 🚀 Installation et exécution
 1. Prérequis
    Assurez-vous d'avoir les outils suivants installés :
-
-Docker
-Docker Compose
+   * Docker
+   * Docker Compose
 2. Cloner le projet
-```bash 
-   Copier le code
-   git clone git@github.com:darkiron/url-shortener-ddd.git
-   cd url-shortener
-```
+   ```bash
+      git clone git@github.com:darkiron/url-shortener-ddd.git
+      cd url-shortener
+   ```
 3. Lancer le projet avec Docker
-```bash 
-   Copier le code
-   docker-compose up --build
-```
+   ```bash
+      docker-compose up --build
+   ```
 4. Accéder au projet
    Frontend : http://localhost:80
 
@@ -63,13 +60,18 @@ Les contributions sont les bienvenues ! Voici comment participer :
 
 
 1. Forker le projet.
-2. Créer une branche pour votre fonctionnalité (`git checkout -b feature/ma-fonctionnalite`).
+2. Créer une branche pour votre fonctionnalité (`git checkout -b feat/ma-fonctionnalite`).
 3. Committez vos changements (`git commit -m "feat: ajout de la fonctionnalité X"`).
 4. Poussez vos modifications (`git push origin feature/ma-fonctionnalite`).
 5. Ouvrez une Pull Request 🎉.
 
-##📜 Licence
-Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d'informations.
+## 📜 Licence
+
+Ce projet est sous licence [Creative Commons](https://creativecommons.org/licenses/).  
+Consultez le fichier LICENSE pour plus d'informations.
+
+![Licence Creative Commons](https://licensebuttons.net/l/by/4.0/88x31.png)
+
 
 ## ✨ Auteur
 Développé à la base par Pierre Miniggio.
