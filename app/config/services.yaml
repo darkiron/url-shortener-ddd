@@ -22,3 +22,15 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    App\Domain\Repository\RedirectionRepositoryInterface: '@App\Infrastructure\Repository\Write\RedirectionWriteRepository'
+
+    App\Infrastructure\Repository\Read\RedirectionReadRepository:
+        class: App\Infrastructure\Repository\Read\RedirectionReadRepository
+
+    App\Infrastructure\Repository\Write\RedirectionWriteRepository:
+        class: App\Infrastructure\Repository\Write\RedirectionWriteRepository
+
+    App\Infrastructure\Locator\RepositoryLocator:
+        arguments:
+            $readRepository: '@App\Infrastructure\Repository\Read\RedirectionReadRepository'
+            $writeRepository: '@App\Infrastructure\Repository\Write\RedirectionWriteRepository'

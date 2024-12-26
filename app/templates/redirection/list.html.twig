@@ -5,27 +5,41 @@
 {% endblock %}
 
 {% block body %}
-    {% set redirectionsCount = redirections|length %}
+    <section class="section">
+        <div class="container">
+            {% set redirectionsCount = redirections|length %}
 
-    {% if redirectionsCount == 0 %}
-        <h1>Aucun lien</h1>
-    {% elseif redirectionsCount == 1 %}
-        <h1>Le lien</h1>
-    {% else %}
-        <h1>Les {{ redirectionsCount }} liens</h1>
-    {% endif %}
+            {% if redirectionsCount == 0 %}
+                <h1 class="title is-4 has-text-centered">Aucun lien</h1>
+            {% elseif redirectionsCount == 1 %}
+                <h1 class="title is-4 has-text-centered">Le lien</h1>
+            {% else %}
+                <h1 class="title is-4 has-text-centered">Les {{ redirectionsCount }} liens</h1>
+            {% endif %}
 
-    <ul>
-        {% for redirection in redirections %}
-            <li>
-                <strong>Lien court :</strong>
-                <a href="{{ path('redirection', { linkId: redirection.from }) }}" target="_blank">
-                    {{ path('redirection', { linkId: redirection.from }) }}
-                </a>
-                <br>
-                <strong>Redirige vers :</strong>
-                <a href="{{ redirection.to }}" target="_blank">{{ redirection.to }}</a>
-            </li>
-        {% endfor %}
-    </ul>
+            <div class="box">
+                <ul>
+                    {% for redirection in redirections %}
+                        <li class="mb-4">
+                            <strong>Lien court :</strong>
+                            <a
+                                    href="{{ path('redirection', { linkId: redirection.from }) }}"
+                                    target="_blank"
+                                    class="has-text-link">
+                                {{ absolute_url(path('redirection', { linkId: redirection.from })) }}
+                            </a>
+                            <br>
+                            <strong>Redirige vers :</strong>
+                            <a
+                                    href="{{ redirection.to }}"
+                                    target="_blank"
+                                    class="has-text-link">
+                                {{ redirection.to }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
 {% endblock %}

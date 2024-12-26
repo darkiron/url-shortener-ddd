@@ -1,4 +1,5 @@
 /.env
 /vendor/
 /var/
+/var/logs/*.log
 /.idea/
