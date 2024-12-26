@@ -3,15 +3,56 @@
 {% block title %}Résultat du Shortener{% endblock %}
 
 {% block body %}
-    <h1>🔗 Voici votre lien raccourci !</h1>
+    <section class="section">
+        <div class="container">
+            <h1 class="title is-3 has-text-centered has-text-weight-bold">
+                🎉 Voici votre lien raccourci !
+            </h1>
+            <p class="subtitle has-text-centered">
+                Partagez ce lien avec vos amis ou utilisez-le directement dans vos applications.
+            </p>
 
-    <p>Votre lien court :</p>
-    <a href="{{ path('redirection', { linkId: redirection.from }) }}" target="_blank">
-        {{ path('redirection', { linkId: redirection.from }) }}
-    </a>
+            <div id="copy-notification" class="notification is-success is-hidden">
+                Lien copié dans le presse-papiers !
+                <button class="delete" onclick="hideNotification()"></button>
+            </div>
 
-    <p>Le lien redirigera vers :</p>
-    <a href="{{ redirection.to }}" target="_blank">{{ redirection.to }}</a>
+            <div class="card">
+                <div class="card-content">
+                    <p class="has-text-grey-dark">Votre lien court :</p>
+                    <div class="is-flex is-align-items-center">
+                        <a href="{{ path('redirection', { linkId: redirection.from }) }}" class="is-size-5 has-text-link has-text-weight-bold">
+                            {{ path('redirection', { linkId: redirection.from }) }}
+                        </a>
+                        <button
+                                class="button is-small is-link ml-4"
+                                onclick="copyToClipboard('{{ absolute_url(path('redirection', { linkId: redirection.from })) }}')">Copier</button>
+                    </div>
+                </div>
+            </div>
 
-    <p>Partagez le lien court avec vos amis ou utilisez-le directement dans vos applications.</p>
+            <div class="buttons mt-4">
+                <a href="{{ path('redirection', { linkId: redirection.from }) }}" class="button is-primary">Ouvrir le lien</a>
+                <a href="/" class="button is-light">Créer un nouveau lien</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const notification = document.getElementById('copy-notification');
+                notification.classList.remove('is-hidden');
+                setTimeout(() => {
+                    notification.classList.add('is-hidden');
+                }, 3000);
+            });
+        }
+
+        function hideNotification() {
+            const notification = document.getElementById('copy-notification');
+            notification.classList.add('is-hidden');
+        }
+
+    </script>
 {% endblock %}

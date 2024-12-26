@@ -1,32 +1,26 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Home | URL Shortener{% endblock %}
+{% block title %}Accueil | URL Shortener{% endblock %}
 
 {% block body %}
-    <header>
-        <h1>🚀 URL Shortener</h1>
-        <p>Raccourcissez vos URLs facilement et partagez-les en un clic.</p>
-    </header>
-
-    <main>
-        <section id="form-section">
-            <h2>Créer une URL courte</h2>
-            <form action="{{ path('create_url') }}" method="POST">
-                <input
-                        type="url"
-                        name="originalUrl"
-                        placeholder="Entrez votre URL ici"
-                        required>
-                <button type="submit">Raccourcir</button>
-            </form>
-        </section>
-
-        <section id="about-section">
-            <h2>À propos du projet</h2>
-            <p>Ce projet est un raccourcisseur d’URL basé sur une architecture DDD. Son objectif est de fournir une solution rapide et efficace pour gérer vos liens.</p>
-            <a href="https://github.com/darkiron/url-shortener-ddd" target="_blank">
-                Voir le projet sur GitHub
-            </a>
-        </section>
-    </main>
+    <div class="box">
+        <h2 class="title is-4">Créer une URL courte</h2>
+        <form action="{{ path('create_url') }}" method="POST">
+            <div class="field">
+                <div class="control">
+                    <input class="input" type="url" name="originalUrl" placeholder="Entrez votre URL ici" required>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button type="submit" class="button is-primary is-fullwidth">Raccourcir</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="content mt-6">
+        <h3 class="title is-5">À propos du projet</h3>
+        <p>Ce projet est un raccourcisseur d’URL basé sur une architecture DDD. Son objectif est de fournir une solution rapide et efficace pour gérer vos liens.</p>
+        <a href="https://github.com/darkiron/url-shortener-ddd" target="_blank" class="button is-link is-light">Voir le projet sur GitHub</a>
+    </div>
 {% endblock %}

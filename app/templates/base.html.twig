@@ -1,16 +1,35 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}URL Shortener{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+</head>
+<body>
+<header class="hero is-primary">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">🚀 URL Shortener</h1>
+            <p class="subtitle">Raccourcissez vos URLs facilement et partagez-les en un clic.</p>
+        </div>
+    </div>
+</header>
 
-        {% block javascripts %}
-        {% endblock %}
-    </head>
-    <body>
+<main class="section">
+    <div class="container">
         {% block body %}{% endblock %}
-    </body>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>URL Shortener</strong> par <a href="https://github.com/darkiron/url-shortener-ddd" target="_blank">darkiron</a>.
+            Projet basé sur une architecture DDD.
+        </p>
+    </div>
+</footer>
+</body>
 </html>
