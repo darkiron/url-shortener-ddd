@@ -1,15 +1,14 @@
 <?php
 
-namespace App\Infrastructure\Repository;
+namespace App\Infrastructure\Repository\Read;
 
-use App\Domain\Entity\Redirection;
 use App\Domain\Repository\RedirectionRepositoryInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Domain\Entity\Redirection as DomainRedirection;
 use App\Infrastructure\Entity\Redirection as DoctrineRedirection;
 use App\Infrastructure\Factory\RedirectionFactory;
 
-class RedirectionRepository implements RedirectionRepositoryInterface
+class RedirectionReadRepository implements RedirectionRepositoryInterface
 {
     private EntityManagerInterface $entityManager;
     private RedirectionFactory $redirectionFactory;
@@ -47,13 +46,8 @@ class RedirectionRepository implements RedirectionRepositoryInterface
         );
     }
 
-    public function saveRedirection(Redirection $redirection): Redirection
+    public function saveRedirection(DomainRedirection $redirection): DomainRedirection
     {
-        $doctrineRedirection = $this->redirectionFactory->createDoctrineFromDomain($redirection);
-
-        $this->entityManager->persist($doctrineRedirection);
-        $this->entityManager->flush();
-
-        return $this->redirectionFactory->createDomainFromDoctrine($doctrineRedirection);
+        throw new \BadMethodCallException("Écriture non supportée ici.");
     }
 }

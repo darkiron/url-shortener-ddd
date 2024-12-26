@@ -2,3 +2,5 @@
 /.idea/
 /vendor/
 /var/
+/var/logs/*.log
+/.idea/

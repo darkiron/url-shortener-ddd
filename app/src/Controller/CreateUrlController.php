@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Application\Command\CreateUrlCommand;
+use App\Application\Command\CreateRedirectionCommand;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -25,7 +25,7 @@ class CreateUrlController extends AbstractController
         }
 
         // Créer et envoyer la commande au bus
-        $command = new CreateUrlCommand($originalUrl);
+        $command = new CreateRedirectionCommand($originalUrl);
 
         $envelope = $bus->dispatch($command);
 
