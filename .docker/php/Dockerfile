@@ -47,7 +47,7 @@ RUN pecl install xdebug && docker-php-ext-enable xdebug
 
 RUN { \
         echo 'zend_extension=xdebug.so'; \
-        echo 'xdebug.mode=debug'; \
+        echo 'xdebug.mode=debug,coverage'; \
         echo 'xdebug.start_with_request=yes'; \
         echo 'xdebug.client_host=${XDEBUG_CLIENT_HOST}'; \
         echo 'xdebug.client_port=9003'; \
